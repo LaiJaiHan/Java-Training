@@ -1,5 +1,4 @@
-import java.util.Arrays;
-import java.util.StringTokenizer;
+
 
 public class SortingProblem_2 {
 	
@@ -40,7 +39,9 @@ public class SortingProblem_2 {
 						
 						for(int a = 0; a < numbers_string[j+1].length(); a++) {
 							
-							if((numbers_string[j].charAt(a) - '0') <= (numbers_string[j+1].charAt(a) - '0')) {
+							int x = numbers_string[j].charAt(a) - '0'; int y = numbers_string[j+1].charAt(a) - '0';
+							
+							if(x <= y) {
 						
 								String temp = numbers_string[j+1];
 								numbers_string[j+1] = numbers_string[j];
@@ -100,8 +101,6 @@ public class SortingProblem_2 {
 			answer = answer + numbers_string[i];
 			
 		}
-		
-		System.out.println(answer);
 		
 	}
 	
