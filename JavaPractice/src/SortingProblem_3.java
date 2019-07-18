@@ -12,7 +12,6 @@ public class SortingProblem_3 {
 		Arrays.sort(completion);
 		
 		int break_point = 0;
-		
 
 		int index = 0;
 		
