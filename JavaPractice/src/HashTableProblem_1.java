@@ -15,9 +15,6 @@ public class HashTableProblem_1 {
 		
 		String[] phone_book = {"119", "97674223", "1195524421"};
 		int[] phone_book_digits = new int[phone_book.length];
- 		
-		for (int i = 0; i<phone_book.length; i++)
-			System.out.println(prefix_hash(phone_book[i],i+1));
 		
 		for (int i = 0; i < phone_book.length; i++) {
 			
